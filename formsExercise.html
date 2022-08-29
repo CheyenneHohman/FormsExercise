@@ -8,35 +8,31 @@
 </head>
 
 <body>
-    <fieldset>
-       <legend>Customer Experience Survey</legend> 
-       <label for="storeNumber">Store Number</label>
-       <select name="storeNumber" id="storeNumber">
-            <option hidden >Select a Store </option>
-            <option value="3109">3109</option>
-            <option value="2421">2421</option>
-            <option value="5357">5357</option>
-       </select>
-
-    <fieldset>
-        <legend>When you visited:</legend>
-        <label for="dateVisited">Date Visited</label>
-        <input type="date" name="dateVisited" min="2022-01-01" max="2022-12-31" >
-    <br>
-        <label for="time">Time</label>
-        <input type="time" id="time" value="">
-    </fieldset>
-
-     <form>
+    <form>
+        <fieldset>
+        <fieldset>
+        <legend>Customer Experience Survey</legend> 
+        <label for="storeNumber">Store Number</label>
+        <select name="storeNumber" id="storeNumber">
+                <option hidden >Select a Store </option>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>When you visited:</legend>
+            <label for="dateVisited">Date Visited</label>
+            <input type="date" name="dateVisited" min="2022-01-01" max="2022-12-31" >
+            <br>
+            <label for="timeVisit">Time</label>
+            <input type="time" name="timeVisit" id="timeVisit">
+        </fieldset>
         <label for="fullName">Full Name</label>
         <input type="text" id="fullName" placeholder="Name">
-    </form>
-
-    <form>
+        <br>
         <label for="userEmail">Email</label>
         <input type="email" id="userEmail" placeholder="Email">
-    </form>
-
         <fieldset>
             <legend>How would you rate your satisfaction with your visit?</legend>
             <input type="radio" name="radioLink" id="one">
@@ -48,23 +44,25 @@
             <input type="radio" name="radioLink" id="three">
             <label for="three">Dissatisfied</label>
         </fieldset>
-
-        <label for="tellUs">Tell us about your experience:</label>
-        <br>
+            <label for="tellUs">Tell us about your experience:</label>
+             <br>
         <textarea name="tellUs" id="tellUs" cols="20" rows="2"></textarea>
-        <form>
+             <br>
             Times visited in the last month:
             <br>
-            <input type="number" id="numberVisits" min="1" max="30">
+                 <input type="number" id="numberVisits" min="1" max="30">
             <br>
-            <input type="checkbox" id="agree" required>
-            <label for="agree">Please check the box if you would be willing to be contacted about your experience</label>
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Please check the box if you would be willing to be contacted about your experience</label>
             <br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" pattern="[5-10]" minlength="5" maxlength="10">
-            <button>Reset</button>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="[5-10]" minlength="5" maxlength="10">
+                <button>Reset</button>
         </form>
-        <button>Submit</button>
+        <br>
+        <input type="submit">
+        </fieldset>
     </fieldset>
+</fieldset>
 </body>
 </html>
